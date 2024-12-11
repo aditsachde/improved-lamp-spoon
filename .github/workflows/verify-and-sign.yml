@@ -68,7 +68,7 @@ jobs:
           cosign sign --yes --key $KEY \
             -a dev.cosignproject.cosign/sigalg=ECDSA_P256_SHA256 \
             -a dev.cosignproject.cosign/pub=$PUB \
-            $TAG_DIGEST
+            $TAG
 
       # Step 7: Push the image
       - name: Push Image
